@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+.nombre_completo {
+    background-color: rgb(195, 228, 222);
+    
+}
+
+@media screen and (max-width: 768px) {
+.seccion-principal {
+    flex-direction: column;
+  }
+}
+
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+    background-color: #68c5d0; 
+    padding: 26px 30px;
+    font-family: "Encode Sans";
+    font-size: 16px;
+  }
+  
+   
+  .logo-blanco {
+    height: 50px;
+  }
+  
+  
+  .navbar a {
+    font-family: "Encode Sans";
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+  }
+ul {
+    text-align: end;
+
+}
+ul li{
+    display: inline-block;
+    padding: 8px;
+  
+}
+a {
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: "Encode Sans";
+   font-size: 20px;
+}
+
+ .proyectos {
+    background-color: #f7f9fb;
+    padding: 2rem;
+  
+  }
+
+  .contenido-proyecto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.botones-proyecto {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  font-family: "Encode Sans";
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vermas {
+  background-color: #5ee3f2;
+  color: black;
+}
+
+.btn-vermas:hover {
+  background-color: #3dcad9;
+}
+
+.btn-descargar {
+  background-color: #333;
+  color: white;
+}
+
+.btn-descargar:hover {
+  background-color: #555;
+}
+
+.main {
+  background-color: #f5fafd;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.card-proyecto {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  gap: 1.5rem;
+}
+
+h3 {
+  font-family: "Encode Sans";
+}
+
+p {
+  font-family: "Encode Sans";
+  font-size: 0.9rem;
+}
+
+.card-proyecto img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  
+  .botones input:hover {
+    background-color: #8e9c9c;
+  }
+
+  footer .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .navbar ul li a {
+    margin-left: 20px;
+    color: white;
+  
+  }
