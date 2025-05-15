@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+.nombre_completo {
+    background-color: rgb(195, 228, 222);
+    
+}
+
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;          
+    background-color: #68c5d0; 
+    padding: 26px 30px;
+    font-family: "Encode Sans";
+    font-size: 16px;
+  }
+  
+   
+  .logo-blanco {
+    height: 50px;
+  }
+  
+  
+  .navbar a {
+    font-family: "Encode Sans";
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+  }
+ul {
+    text-align: end;
+
+}
+ul li{
+    display: inline-block;
+    padding: 8px;
+  
+}
+a {
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: "Encode Sans";
+   font-size: 20px;
+   color: #242424;
+}
+
+.titulo-paginas {
+  margin: 20px;
+}
+
+.proyecto-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.proyecto-imagen {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.5rem;
+}
+
+.proyecto-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proyecto-area {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-titulo {
+  font-size: 20px;
+  margin: 0;
+}
+
+.proyecto-descripcion {
+  margin: 2rem 0;
+  font-size: 16px;
+}
+
+.boton-ver {
+  font-family: "Encode Sans";
+  background-color: #5ae8f0;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #242424;
+}
+
+.boton-descargar {
+  font-family: "Encode Sans";
+  background-color: #242424;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .proyecto-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+.proyecto-card img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+    .proyecto-info {
+    text-align: center;
+    align-items: center;
+  }
+.proyecto-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+p {
+  font-family: "Encode Sans";
+  font-size: 0.9rem;
+}
+
+.card-proyecto img {
+  width: 250px;
+  height: center;
+  border-radius: 10px;
+}
+
+  
+  .botones input:hover {
+    background-color: #8e9c9c;
+  }
+
+  footer .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer .navbar ul li a {
+    margin-left: 20px;
+    color: white;
+  
+  }
