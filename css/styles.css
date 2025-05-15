@@ -18,6 +18,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contenedor-header {
     display: flex;
     justify-content: space-between;
@@ -123,12 +127,16 @@ a {
     cursor: pointer;
   }
   
-  .btn-texto {
-    font-family: "Encode Sans";
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+.btn-texto {
+  font-family: "Encode Sans";
+  color: #242424;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
   
 
   .columna-derecha {
