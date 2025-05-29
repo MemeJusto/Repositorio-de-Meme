@@ -2,29 +2,33 @@
 
 
 
-
 body.todo {
   font-family: variables.$fuente-principal;
   background-color: variables.$color-blanco;
   line-height: 1.6;
 }   
 
-// HEADER
-header {
-  background-color: variables.$color-primario;
-  padding: 10px 0;
 
-  .contenedor-header {
+// HEADER
+header 
+.contenedor-header {
+  background-color: variables.$color-primario;
+
+}
+
+.contenedor-header {
     display: flex;
+    background-color: variables.$color-primario;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-  }
-
-  .logo-blanco {
+    margin: 0;
+    max-width: 100%;
+    padding: 20px 20px;
+  
+    .logo-blanco {
     max-height: 50px;
+  }
   }
 
   .navbar-nav {
@@ -38,7 +42,7 @@ header {
   .navbar-toggler {
     border: none;
   }
-}
+
 
 // principal
 
