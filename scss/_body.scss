@@ -139,7 +139,7 @@ header
   padding: 50px 20px;
 
   .titulo-ejes {
-    font-family: "Encode Sans";
+    font-family: variables.$fuente-principal;
     color: variables.$color-texto;
     font-size: 24px;
     margin-bottom: 40px;
@@ -166,7 +166,7 @@ header
       }
 
       p {
-        font-family: "Encode Sans";
+        font-family: variables.$fuente-principal;
         font-size: 1rem;
         color: variables.$color_texto;
         line-height: 1.2;
@@ -217,6 +217,7 @@ header
       overflow: hidden;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       text-align: left;
+      text-decoration: none;
 
       img {
         width: 100%;
@@ -369,6 +370,7 @@ footer {
         a {
           margin-left: 20px;
           color: white;
+          text-decoration: none;
         }
       }
     }
@@ -387,6 +389,6 @@ footer {
   }
 
   .noticias-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
