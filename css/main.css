@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -33,23 +32,35 @@
   background-color: #8e9c9c;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 .btn-blanco {
   background-color: #ffffff;
   color: #242424;
-  padding: 10px 20px;
+  text-decoration: none;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+}
+.btn-blanco:hover {
+  background-color: #68c5d0;
+  color: #ffffff;
 }
 
 .btn-texto {
   background: none;
   border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
   color: #242424;
+  text-decoration: none;
+}
+.btn-texto:hover {
+  text-decoration: underline;
 }
 
 body.todo {
@@ -99,13 +110,13 @@ header .contenedor-header {
 }
 .seccion-principal .columna-izquierda h1 {
   font-family: "Encode Sans", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: #242424;
   margin: 0;
 }
 .seccion-principal .columna-izquierda h2 {
   font-family: "Encode Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 20px;
   color: #242424;
 }
@@ -234,7 +245,6 @@ header .contenedor-header {
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
-  text-decoration: none;
 }
 .ultimas-noticias .noticias-grid .noticia img {
   width: 100%;
@@ -255,9 +265,10 @@ header .contenedor-header {
 }
 .proyectos .grid-proyectos {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 2fr;
   justify-items: center;
+  align-items: center;
 }
 .proyectos .grid-proyectos .proyecto-card {
   display: grid;
@@ -265,7 +276,7 @@ header .contenedor-header {
   width: 100%;
   gap: 2rem;
   align-items: center;
-  margin: 2rem 0;
+  margin: 0;
   padding: 2rem;
   background: white;
   border-radius: 1rem;
@@ -371,8 +382,8 @@ footer .navbar ul li a {
     align-items: center;
   }
   .noticias-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=MAIN.CSS.map */
