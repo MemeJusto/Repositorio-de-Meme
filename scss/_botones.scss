@@ -23,6 +23,25 @@
 }
 
 //clase para botones tipo enlacee
+
+
+.btn-blanco {
+  background-color: variables.$color-blanco;
+  color: variables.$color-texto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   text-decoration: none;
+
+  &:hover {
+    background-color: variables.$color-primario;
+    color: white;
+     text-decoration: none;
+    }
+
+}
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -31,30 +50,4 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-
-}
-
-
-.btn-blanco {
-  background-color: variables.$color-blanco;
-  color: variables.$color-texto;
-  text-decoration: none;
-  border: none;
-
-  &:hover {
-  background-color: variables.$color-primario;
-  color: variables.$color-blanco;
-}
-
-}
-
-.btn-texto {
-  background: none;
-  border: none;
-  color: variables.$color-texto;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration:underline; 
-  }
 }

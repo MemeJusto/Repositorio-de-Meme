@@ -43,7 +43,32 @@ header
     border: none;
   }
 
+ h1 {
+      font-family: variables.$fuente-principal;
+      font-size: 1.9rem;
+      color: variables.$color-texto;
 
+    }
+
+    h2 {
+      font-family: variables.$fuente-principal;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: variables.$color-texto;
+    }
+
+      h3 {
+      font-family: variables.$fuente-principal;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: variables.$color-texto;
+    }
+
+    p {
+      font-family: variables.$fuente-principal;
+      font-size: 0.9rem;
+      color: variables.$color-texto;
+    }
 // principal
 
 .seccion-principal {
@@ -58,25 +83,7 @@ header
     flex-direction: column;
     justify-content: center;
 
-    h1 {
-      font-family: variables.$fuente-principal;
-      font-size: 1.9rem;
-      color: variables.$color-texto;
-      margin: 0;
-    }
-
-    h2 {
-      font-family: variables.$fuente-principal;
-      font-size: 1.2rem;
-      margin-top: 20px;
-      color: variables.$color-texto;
-    }
-
-    p {
-      font-family: variables.$fuente-principal;
-      font-size: 0.9rem;
-      color: variables.$color-texto;
-    }
+   
 
     .botones {
       display: flex;
@@ -84,16 +91,8 @@ header
       gap: 20px;
       margin-top: 20px;
 
-      .btn-blanco {
-        font-family: variables.$fuente-principal;
-        background-color: white;
-        color: variables.$color-texto;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
 
+  
       .btn-texto {
         font-family: variables.$fuente-principal;
         color: variables.$color-texto;
@@ -103,9 +102,20 @@ header
         padding: 10px 20px;
         display: flex;
         align-items: center;
+         text-decoration: none;
+
+        &:hover {
+       color: variables.$color-blanco;
+       text-decoration: none;
+        }
       }
     }
   }
+}
+
+
+.translate:hover {
+  transform: scale(1.05);
 }
 
   .columna-derecha {
@@ -126,9 +136,9 @@ header
     }
   }
 
-
 .titulo-paginas {
   margin: 20px;
+  
 }
 
 
@@ -141,7 +151,7 @@ header
   .titulo-ejes {
     font-family: variables.$fuente-principal;
     color: variables.$color-texto;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 40px;
   }
 
@@ -177,16 +187,14 @@ header
 
 // ÚLTIMAS NOTICIAS
 .ultimas-noticias {
+  display: grid;
+  place-items: center;
   padding: 40px 20px;
   max-width: 1200px;
-  margin: auto;
+  margin: 20px;
 
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
 
+  
   .tabs {
     display: flex;
     justify-content: center;
@@ -211,23 +219,26 @@ header
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 
-
     .noticia {
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 
 
       img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      max-height:max-content;
+      margin: 0; // elimina márgenes
+  
       }
 
       h3 {
-        font-size: 1rem;
-        padding: 10px;
+      font-size: 1rem;
+      padding: 10px;
       }
     }
   }
@@ -240,7 +251,6 @@ header
 
   .titulo-paginas {
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 3rem;
   }
 
@@ -280,7 +290,7 @@ header
         }
 
         .proyecto-titulo {
-          font-size: 20px;
+      
           margin: 0;
         }
 
@@ -328,7 +338,7 @@ header
 
   .reunirte {
     text-align: center;
-    font-size: 1.5rem;
+  
     margin-bottom: 20px;
   }
 
