@@ -1,4 +1,4 @@
 */git status*/
 git add .
-git commit -m "Tu mensaje descriptivo del commit"
+git commit -m "Agregué efecto de hover con transform al logo"
 git push origin main
